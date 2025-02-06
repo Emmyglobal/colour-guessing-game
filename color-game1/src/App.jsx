@@ -105,13 +105,16 @@ borderRadius:"5px"
     <div className="container" style={{textAlign: "center", padding: "20px"}}>
       <Header />
       <hr />
-      <h4>CountDown time: {ctime}</h4>
+      <p data-testid="gameInstructions" style={{ fontSize: "18px", fontWeight: "bold" }}>
+        Guess the correct color! Click on the color that matches the displayed box.
+      </p>
+      <h4 data-testid="countdown">CountDown time: {ctime}</h4>
       <ColorBox color={correctColor}/>
-      <p>{message}</p>
+      <p data-testid="message">{message}</p>
       <ColorOptions correctColor={correctColor} onColorSelect={handleColorSelect}/>
-      <p>Your Score is: {score}</p>
-      <button style={btn} onClick={startNewGame}>New Game</button>
-      <button style={btn} disabled={gameOver}>Reset Game</button>
+      <p data-testid="score">Your Score is: {score}</p>
+      <button data-testid="newGameButton" style={btn} onClick={startNewGame}>New Game</button>
+      <button data-testid="resetGameButton" style={btn} disabled={gameOver}>Reset Game</button>
     </div>
   );
 }
