@@ -47,5 +47,8 @@ a{
 
 .optionCont{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
   gap: 10px;
 }

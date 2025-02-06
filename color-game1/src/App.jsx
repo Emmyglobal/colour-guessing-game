@@ -98,7 +98,9 @@ alignSelf: "center",
 margin: "5px", 
 padding:"7px", 
 border:"none",
+backgroundColor:"blue",
 cursor:"pointer",
+fontSize:"16px",
 borderRadius:"5px"
   }
   return (
@@ -108,11 +110,11 @@ borderRadius:"5px"
       <p data-testid="gameInstructions" style={{ fontSize: "18px", fontWeight: "bold" }}>
         Guess the correct color! Click on the color that matches the displayed box.
       </p>
-      <h4 data-testid="countdown">CountDown time: {ctime}</h4>
+      <h4 data-testid="countdown" style={{backgroundColor:"blue", padding:"5px", color:"white"}}>CountDown time: {ctime}</h4>
       <ColorBox color={correctColor}/>
-      <p data-testid="message">{message}</p>
+      <p data-testid="message" style={{backgroundColor:"blue", padding:"5px", color:"white"}}>{message}</p>
       <ColorOptions correctColor={correctColor} onColorSelect={handleColorSelect}/>
-      <p data-testid="score">Your Score is: {score}</p>
+      <p data-testid="score" style={{backgroundColor:"blue", padding:"5px", color:"white"}}>Your Score is: {score}</p>
       <button data-testid="newGameButton" style={btn} onClick={startNewGame}>New Game</button>
       <button data-testid="resetGameButton" style={btn} disabled={gameOver}>Reset Game</button>
     </div>
