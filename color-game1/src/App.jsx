@@ -116,7 +116,7 @@ borderRadius:"5px"
       <ColorOptions correctColor={correctColor} onColorSelect={handleColorSelect}/>
       <p data-testid="score" style={{backgroundColor:"blue", padding:"5px", color:"white"}}>Your Score is: {score}</p>
       <button data-testid="newGameButton" style={btn} onClick={startNewGame}>New Game</button>
-      <button data-testid="resetGameButton" style={btn} disabled={gameOver}>Reset Game</button>
+      <button data-testid="resetGameButton" style={btn} onClick={startNewGame}>Reset Game</button>
     </div>
   );
 }
