@@ -13,7 +13,7 @@ function ColorBox({ color }) {
     return (
         <div className="container1">
             <h1 style={{marginTop: "100px"}}>Guess the correct Colour!</h1>
-            <div  style={boxStyle} className="boxAnimation">
+            <div data-testid="colorBox"  style={boxStyle} className="boxAnimation">
 
             </div>
 

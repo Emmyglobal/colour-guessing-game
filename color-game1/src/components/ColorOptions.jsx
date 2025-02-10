@@ -34,6 +34,7 @@ function ColorOptions({ correctColor, onColorSelect }) {
                 colors.map((color, index) => (
                     <button
                         key={index}
+			data-testid={`color-option-${index}`}
                         style={{
                             width: "100px",
                             height: "50px",
